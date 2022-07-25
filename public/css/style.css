@@ -1,3 +1,11 @@
+body {
+  font-family: 'Recursive',
+  sans-serif;
+  font-family: 'Righteous',
+  cursive;
+  background-color: #FB6B6B;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -9,40 +17,36 @@
   justify-content: space-between;
 }
 
-.tela01{
+
+.tela01 {
   width: 100%;
   height: 100%;
   position: fixed;
+  top: 0;
+  left: 0;
+  background-color: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 1;
   background-color: #FB6B6B;
 }
 
-.tela01 img{
-  width: 136px;
-  height: 161px;
-  margin-bottom: 13px;
-  
-}
-
-.tela01 h1{
- 
-  
+.tela01 h1 {
   font-family: 'Righteous';
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 45px;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: -0.012em;
-  
   color: #FFFFFF;
-  margin-bottom: 30px;
-  
+}
+
+.tela01 img {
+  width: 136px;
+  height: 161px;
+  margin-bottom: 13px;
 }
 
 .tela01 button {
@@ -56,42 +60,33 @@
   font-family: 'Recursive';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 12px;
   line-height: 14px;
   text-align: center;
   color:#D70900;
 }
 
-.header{
+.tela02 {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 48px;
 }
 
-.header img{
+.tela02 img {
   width: 52px;
-height: 60px;
-
-  top: 44px;
-  left: 59px;
+  height: 60px;
+  margin-right: 22px;
 }
 
-.header h1{
-  top: 48px;
-  left: 111px;
-
-font-family: 'Righteous';
-font-style: normal;
-font-weight: 400;
-font-size: 36px;
-line-height: 45px;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: -0.012em;
-
-color: #FFFFFF;
-
-transform: rotate(0.58deg);
-
+.tela02 h1 {
+  font-family: 'Righteous';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.012em;
+  color: #FFFFFF;
 }

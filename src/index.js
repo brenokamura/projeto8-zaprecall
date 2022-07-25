@@ -1,5 +1,25 @@
-import reactDom from 'react-dom';
-import App from './components/App'
+import ReactDOM from "react-dom";
+import React from "react";
+import Tela01 from "./components/Tela01";
+import Tela02 from "./components/Tela02";
 
+function App() {
+  const [tela, setTela] = React.useState(true);
 
-reactDom.render(<App />, document.querySelector('.root'));
+  return (
+    <>
+      <div >
+        {tela ? (
+          <div className="tela01">
+            <Tela01 />
+            <button  onClick={() => setTela(!tela)}>Iniciar Recall!</button>
+          </div>
+        ) : (
+          <Tela02 />
+        )}
+      </div>
+    </>
+  );
+}
+
+ReactDOM.render(<App />, document.querySelector(".root"));
